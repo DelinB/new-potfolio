@@ -1,0 +1,150 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #212529;
+    color: white;
+  }
+  
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .home-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .inro {
+    max-width: 600px;
+  }
+  
+  .inro h1, .inro h2 {
+    margin: 10px 0;
+  }
+  
+  .inro p {
+    margin: 20px 0;
+    line-height: 1.6;
+  }
+  
+  .home-iconsandbutton {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  button {
+    background-color: #0788FF;
+    color: white;
+    padding: 13px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .home-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .home-icons a:hover .Github-icon,
+  .home-icons a:hover .Linkedin-icon,
+  .home-icons a:hover .Facebook-icon,
+  .home-icons a:hover .Whatsapp-icon {
+    color: #0788FF;
+  }
+  
+  .home-icons svg {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .home-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .inro {
+      max-width: 90%;
+    }
+  
+    .profile-img {
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .inro h1 {
+      font-size: 28px;
+    }
+  
+    .inro h2 {
+      font-size: 24px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    .home-icons svg {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home {
+      padding: 10px;
+    }
+  
+    .home-iconsandbutton {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    .home-icons a {
+      margin: 5px;
+    }
+  
+    .profile-img {
+      max-width: 200px;
+    }
+  }
+  

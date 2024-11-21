@@ -1,0 +1,131 @@
+/* General styling for the top bar */
+.topbar {
+  background: rgb(8, 8, 114);
+  background: linear-gradient(90deg, #052C65, #212529);
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.topbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo-img {
+  width: 35px;
+  height: auto;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 47px;
+  color: white;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* Menu icon for mobile (hidden by default) */
+.menu-icon {
+  display: none; /* Hide the menu icon by default on larger screens */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.nav-links {
+  transition: 0.5s ease-in-out;
+}
+
+/* Make the navigation menu responsive */
+@media screen and (max-width: 989px) {
+  /* When the screen size is smaller than 989px */
+  .nav-links.active {
+    position: absolute;
+    top: 105px;
+    left: 0;
+    width: 100vw;
+    background-color: #212529;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav-links {
+    display: none; /* Hide the navigation links by default */
+  }
+
+  .menu-icon {
+    display: flex; /* Show the menu icon on mobile */
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+header {
+  background: rgb(8, 8, 114);
+}
+
+.nav-links.active {
+  background-color: #ff9900;
+}
+
+.nav-links button {
+  margin-left: 20px;
+  padding: 3px;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 994px) {
+  .topbar-container {
+    justify-content: space-between;
+  }
+}

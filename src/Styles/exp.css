@@ -1,0 +1,74 @@
+.experiance p{ 
+     border: 1px solid black;
+    width: fit-content;
+    padding: 4px 4px 4px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: hsla(0, 0%, 100%, 0.05);
+    /* white-space: nowrap;
+    white-space: normal;
+    white-space: pre; */
+    letter-spacing: 3px;
+
+    color: white; 
+    border-radius: 5px; 
+    }
+
+    .experiance{
+        background: linear-gradient(90deg, #052C65, #212529);
+        padding: 60px;
+color: white;
+
+    }
+    .cardcontennt1{
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        background: linear-gradient(90deg,#0d4fb1,#1f2327 );
+        color: white;
+        align-items: center;    /* Center vertically */
+padding: 25px 0px 0px 0px;
+    }
+    .cardcontennt2{
+background-color: rgb(10, 137, 179);
+color: white;
+display: flex;
+
+justify-content: center; /* Center horizontally */
+align-items: center;    /* Center vertically */
+
+    }
+
+    .contennt{
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center;    /* Center vertically */
+       
+    }
+    .contennt .cardcontennt1 h1{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .myexperiance{
+        background-color: #052C65;
+        margin-top: 20px;
+    }
+    .myexperiance.first-p{
+       
+    }
+    .experience{
+        border: 1px  solid black;
+        border-radius: 15px;
+        background-color: #164790;
+        padding: 16px;
+        margin: 20px;
+        color: white;
+    }
+   .experience.time{
+    border: 1px solid white;
+   }
+   .about{
+    padding: 20px;
+    color: white;
+   }

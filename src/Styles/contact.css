@@ -1,0 +1,65 @@
+.contactlast{
+    background: linear-gradient(90deg, #052C65, #212529);
+color: white;
+justify-content: center;
+}
+.contactlast h1{
+display: flex;
+margin-left: 60px;}
+.copyright{
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+.contactlast hr{
+    color: gray;
+}
+.contactlast-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 110px;
+padding: 30px;
+    width: 540px;
+    background-color: #052C65;
+    gap: 20px;
+
+}
+
+.contactlast-card button{
+    /* width: 100%;
+    padding: 12px 40px;
+    border-radius: 23px;
+    background-color: dodgerblue;
+    color: white; */
+    
+border: #0788FF;
+}
+.contactlast.number-and-mail{
+    display: flex;
+    justify-self: start;
+}
+.form{
+    border: #0788FF;
+    width: 80%;
+
+}
+.form-input{
+    display: flex;
+    background-color: hsla(0, 0%, 100%, .05);
+    padding: 10px;
+    width: 500px;
+    gap: 12px;
+    border-radius: 12px;
+    border-color:  hsla(0, 0%, 100%, .05) ;
+
+}
+.Write-an-e-mail{
+    color: gray;
+}
+@media  (min-width:714px) {
+    .contactlast{
+    justify-content: center;
+    }
+}

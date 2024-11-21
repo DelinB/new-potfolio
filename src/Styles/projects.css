@@ -1,0 +1,99 @@
+/* Base Styles */
+.project-page {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.project-page p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #052c65;
+  margin-bottom: 10px;
+}
+
+.project-page h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #212529;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures items wrap to the next line on smaller screens */
+}
+
+.contennt {
+  flex: 1 1 calc(33.333% - 40px); /* Take 1/3 of the row and leave space for margins */
+  margin: 10px;
+  max-width: 300px; /* Optional: Prevent cards from growing too large */
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.card img {
+  height: 200px; /* Consistent image height */
+  object-fit: cover; /* Ensure the image doesn't stretch */
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #052c65;
+}
+
+button {
+  background-color: #052c65;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #031e42;
+}
+
+/* Responsive Adjustments */
+
+/* For tablets and small laptops */
+@media (max-width: 992px) {
+  .contennt {
+    flex: 1 1 calc(50% - 40px); /* Take half of the row */
+  }
+
+  .project-page h1 {
+    font-size: 28px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 576px) {
+  .contennt {
+    flex: 1 1 calc(100% - 20px); /* Take the full width */
+  }
+
+  .project-page p {
+    font-size: 16px;
+  }
+
+  .project-page h1 {
+    font-size: 24px;
+  }
+
+  button {
+    width: 100%; /* Full-width buttons */
+  }
+}

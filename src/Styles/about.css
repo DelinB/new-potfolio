@@ -1,0 +1,133 @@
+/* .about-main {
+  background: linear-gradient(90deg, #052C65, #212529);
+  padding: 20px;
+
+}
+
+.profile-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-about img {
+  width: 500px;
+  max-width: 100%; 
+  border-radius: 10px; 
+}
+
+.card-Review {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin: 10px;
+}
+
+.card-Review p {
+  background-color: transparent;
+  color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.container-about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; 
+}
+
+.about p {
+  border: 1px solid black;
+  width: 100px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: hsla(0, 0%, 100%, 0.05);
+  color: white; 
+  margin: 10px 0;
+  border-radius: 5px; 
+} */
+/*  */
+
+
+.profile-about img {
+    width: 600px;
+    
+  }
+
+  .container-about{display: flex;
+    padding: 20px;
+}
+
+.about-main {
+  background: linear-gradient(90deg, #052C65, #212529);
+  padding: 20px;  
+  }
+
+  .about p {
+    border: 1px solid black;
+    width: 100px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: hsla(0, 0%, 100%, 0.05);
+    color: white; 
+    margin: 10px 0;
+    border-radius: 5px; 
+  }
+
+  .action button{
+    border-radius: 40px;
+    background-color:#0788ff;
+    color: white;
+    align-items: center;
+    padding: 13px 30px;
+    display: inline-flex;
+    border: 2px solid #0788ff;
+  }
+
+  .about-section .review-box {
+    display: flex;
+    padding-bottom: 45px;
+    padding-top: 15px;
+}
+.about-section {
+    overflow: hidden;
+}
+
+
+
+.section {
+    padding: 100px 0;
+    position: relative;
+}
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.container-about{
+    padding: 100px;
+    gap: 60px;
+
+}
+
+
+@media (max-width: 1440px) {
+    .container-about {
+      flex-direction: column; /* Switch to column layout */
+    }
+    .profile-about img {
+       display: flex;   
+       justify-content: center;    
+       align-items: center; 
+      }
+      .about-content{
+        column-gap: 400px;
+
+      }
+  }
